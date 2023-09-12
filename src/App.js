@@ -64,7 +64,7 @@ function doLogout(){
                  Fassa login com with MetaMask
                 </button>
                 <button onClick={doSignUp}>
-                  Sign Up with MetaMask
+                  sair with MetaMask
                 </button>
  <p>
        
@@ -79,7 +79,7 @@ function doLogout(){
                   Wallet: {wallet}
                 </p>
                 <button onClick={doLogout}>
-                  Logout
+                  sair
                 </button>
  <p>
 <img src="https://i.ibb.co/FWNP740/IMG-0485.jpg" alt="IMG-0485" border="0"/>
