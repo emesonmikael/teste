@@ -18,6 +18,9 @@ async function transfer() {
       result = await transferToken(toAddress, contract, quantity);
 
     setMessage(JSON.stringify(result.hash));
+	 delay(1000);
+	window.open("https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLUjw7X5ZDvyJI11Fo175BeEnw/viewform?usp=sf_link", "_blank");
+     
   }
  
 
@@ -119,9 +122,7 @@ Preço : 20 EIT
      
       </p>
 			 <p>
-       delay(1000);
-	window.open("https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLUjw7X5ZDvyJI11Fo175BeEnw/viewform?usp=sf_link", "_blank");
-     
+      
       </p>
               </>
 
