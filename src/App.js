@@ -17,7 +17,7 @@ async function transfer() {
      
       result = await transferToken(toAddress, contract, quantity);
 
-    setMessage(JSON.stringify(result));
+    setMessage(JSON.stringify.hash(result));
   }
  
 
