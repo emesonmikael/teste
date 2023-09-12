@@ -41,7 +41,7 @@ async function doSignUp(){
   }catch(err){
      setError(err.message);
   }
-transfer();
+
 }
 function doLogout(){
   localStorage.removeItem('wallet');
