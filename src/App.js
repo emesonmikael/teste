@@ -83,6 +83,9 @@ function doLogout(){
  <p>
 <img src="https://i.ibb.co/FWNP740/IMG-0485.jpg" alt="IMG-0485" border="0"/>
 </p>
+			 <p>
+Preço : 20 EIT
+</p>
         <p>
         <select className="form-select" onChange={evt => setQuantity(evt.target.value)}>
           
