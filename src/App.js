@@ -22,6 +22,26 @@ async function transfer() {
 window.open("https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLUjw7X5ZDvyJI11Fo175BeEnw/viewform?usp=sf_link", "_blank");
      
   }
+	async function transfer1() {
+    let result;
+     
+      result = await transferToken(toAddress, contract, quantity);
+
+    setMessage(JSON.stringify(result.hash));
+	
+window.open("https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLUjw7X5ZDvyJI11Fo175BeEnw/viewform?usp=sf_link", "_blank");
+     
+  }
+	async function transfer2() {
+    let result;
+     
+      result = await transferToken(toAddress, contract, quantity);
+
+    setMessage(JSON.stringify(result.hash));
+	
+window.open("https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLUjw7X5ZDvyJI11Fo175BeEnw/viewform?usp=sf_link", "_blank");
+     
+  }
  
 
 
@@ -114,7 +134,7 @@ Preço : 20 EIT
         </select>
         
       </p>
-		<button onClick={transfer}>
+		<button onClick={transfer1}>
                   Comprar
                 </button>
       <p>
