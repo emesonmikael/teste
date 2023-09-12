@@ -61,7 +61,7 @@ function doLogout(){
 		<h1>Login</h1>
 		</p>
                 <button onClick={doSignIn}>
-                  Sign In with MetaMask
+                 Fassa login com with MetaMask
                 </button>
                 <button onClick={doSignUp}>
                   Sign Up with MetaMask
