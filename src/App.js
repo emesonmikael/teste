@@ -67,6 +67,10 @@ function doLogout(){
                   Sign Up with MetaMask
                 </button>
  <p>
+        <select className="form-select" onChange={evt => setQuantity(evt.target.value)}>
+          <option value="BNB">BNB</option>
+          <option value="20">EI</option>
+        </select>
         
       </p>
 
