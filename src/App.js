@@ -5,7 +5,7 @@ import {useState} from 'react';
 import { getTokenBalance, getBnbBalance, transferBnb, transferToken, getTransaction } from './MetaMaskService';
 function App() {
 const [toAddress, setToAddress] = useState("0x000000000000000000000000000000000000dead");
-const [quantity, setQuantity] = useState("");
+const [quantity, setQuantity] = useState("20");
  const [contract, setContract] = useState("0x6c4fbe6aefd6e2f541c99fc807436fc152af14bf");
   const [myAddress, setMyAddress] = useState("");
   const [balance, setBalance] = useState('');
@@ -87,10 +87,7 @@ function doLogout(){
 Preço : 20 EIT
 </p>
         <p>
-        <select className="form-select" onChange={evt => setQuantity(evt.target.value)}>
-          
-          <option value="20">EI</option>
-        </select>
+       
         
       </p>
 		<button onClick={transfer}>
