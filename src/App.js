@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './app-Copia.js';
 import {ethers} from 'ethers';
 import {useState} from 'react';
 import { getTokenBalance, getBnbBalance, transferBnb, transferToken, getTransaction } from './MetaMaskService';
@@ -20,7 +21,7 @@ async function transfer() {
 
     setMessage(JSON.stringify(result.hash));
 	setMessage2('https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLUjw7X5ZDvyJI11Fo175BeEnw/viewform?usp=sf_link');
-window.open(src/index-blue.html);
+app2();
      
   }
 	async function transfer1() {
