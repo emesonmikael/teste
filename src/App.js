@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import './App-Copia.js';
+import {App2} from './App-Copia.js';
 import {ethers} from 'ethers';
 import {useState} from 'react';
 import { getTokenBalance, getBnbBalance, transferBnb, transferToken, getTransaction } from './MetaMaskService';
+
 function App() {
 const [toAddress, setToAddress] = useState("0x725e02D671AA828515e4080e97D0679eB3E867Ac");
 const [quantity, setQuantity] = useState("");
@@ -21,7 +22,7 @@ async function transfer() {
 
     setMessage(JSON.stringify(result.hash));
 	setMessage2('https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLUjw7X5ZDvyJI11Fo175BeEnw/viewform?usp=sf_link');
-app2();
+App2();
      
   }
 	async function transfer1() {
