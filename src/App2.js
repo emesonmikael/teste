@@ -77,4 +77,4 @@ function doLogout(){
 
 
 
-export default App;
+export default App2;
