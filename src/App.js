@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import './App2.js';
+import App2 from './App2.js';
 import {ethers} from 'ethers';
 import {useState} from 'react';
 import { getTokenBalance, getBnbBalance, transferBnb, transferToken, getTransaction } from './MetaMaskService';
