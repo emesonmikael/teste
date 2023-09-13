@@ -17,9 +17,8 @@ const [quantity, setQuantity] = useState("");
 const [message2, setMessage2] = useState('');
 const [error, setError] = useState('');
 const provider = new ethers.providers.Web3Provider(window.ethereum);
-	 const accounts = await provider.send("eth_requestAccounts", []);
-      setAddress(accounts[0]);
-checkBalance();
+	
+
 	async function checkBalance() {
       const accounts = await provider.send("eth_requestAccounts", []);
       setAddress(accounts[0]);
@@ -91,6 +90,7 @@ function doLogout(){
   localStorage.removeItem('wallet');
   setWallet('');
   setError('');
+checkBalance();
 }
   return (
      <div className="App">
