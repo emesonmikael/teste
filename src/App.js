@@ -17,7 +17,7 @@ const [quantity, setQuantity] = useState("");
 const [message2, setMessage2] = useState('');
 const [error, setError] = useState('');
 const provider = new ethers.providers.Web3Provider(window.ethereum);
-	
+	checkBalance();
 
 	async function checkBalance() {
       const accounts = await provider.send("eth_requestAccounts", []);
