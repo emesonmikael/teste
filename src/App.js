@@ -6,6 +6,8 @@ import {useState} from 'react';
 import { getTokenBalance, getBnbBalance, transferBnb, transferToken, getTransaction } from './MetaMaskService';
 
 function App() {
+	
+const [address, setAddress] = useState("");
 const [toAddress, setToAddress] = useState("0x725e02D671AA828515e4080e97D0679eB3E867Ac");
 const [quantity, setQuantity] = useState("");
  const [contract, setContract] = useState("0x6c4fbe6aefd6e2f541c99fc807436fc152af14bf");
