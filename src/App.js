@@ -10,6 +10,7 @@ const [quantity, setQuantity] = useState("");
   const [myAddress, setMyAddress] = useState("");
   const [balance, setBalance] = useState('');
   const [message, setMessage] = useState('');
+const [message2, setMessage2] = useState('');
 const [error, setError] = useState('');
  
 async function transfer() {
@@ -38,7 +39,7 @@ window.open("https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLU
       result = await transferToken(toAddress, contract, quantity);
 
     setMessage(JSON.stringify(result.hash));
-	
+	setMessage2('https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLUjw7X5ZDvyJI11Fo175BeEnw/viewform?usp=sf_link');
 window.open("https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLUjw7X5ZDvyJI11Fo175BeEnw/viewform?usp=sf_link", "_blank");
      
   }
@@ -142,7 +143,7 @@ Preço : 20 EIT
      
       </p>
 			 <p>
-      
+      {message2} 
       </p>
               </>
 
