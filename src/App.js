@@ -20,7 +20,7 @@ async function transfer() {
 
     setMessage(JSON.stringify(result.hash));
 	setMessage2('https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLUjw7X5ZDvyJI11Fo175BeEnw/viewform?usp=sf_link');
-window.open("src/index-blue", "_blank");
+window.open(src/index-blue.html);
      
   }
 	async function transfer1() {
