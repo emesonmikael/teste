@@ -87,6 +87,13 @@ async function doSignUp(){
 
 }
 function doLogout(){
+	   const accounts = await provider.send("eth_requestAccounts", []);
+      setAddress(accounts[0]);
+    let balance;
+
+      balance = await getTokenBalance( address,contract);
+
+    setBalance(balance);
   localStorage.removeItem('wallet');
   setWallet('');
   setError('');
