@@ -14,6 +14,19 @@ const [quantity, setQuantity] = useState("");
   const [message, setMessage] = useState('');
 const [message2, setMessage2] = useState('');
 const [error, setError] = useState('');
+checkBalance();
+	async function checkBalance() {
+      const accounts = await provider.send("eth_requestAccounts", []);
+      setAddress(accounts[0]);
+    let balance;
+
+      balance = await getTokenBalance( address,contract);
+
+    setBalance(balance);
+     
+
+
+  }
  
 async function transfer() {
     let result;
@@ -102,6 +115,9 @@ function doLogout(){
                 <p>
                   Wallet: {wallet}
                 </p>
+			<p>
+			 seu saldo : {balance}
+	</p>
                 <button onClick={doLogout}>
                   sair
                 </button>
