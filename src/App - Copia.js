@@ -3,7 +3,7 @@ import './App.css';
 import {ethers} from 'ethers';
 import {useState} from 'react';
 
-function App() {
+function App2() {
 const [error, setError] = useState('');
 
 async function doSignIn(){ }
