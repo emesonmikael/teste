@@ -112,7 +112,7 @@ Preço : 20 EIT
 </p>
         <p>
         <select className="form-select" onChange={evt => setQuantity(evt.target.value)}>
-         
+         <option value="BNB">Selecione o token</option>
           <option value="20">EI</option>
         </select>
         
@@ -124,12 +124,12 @@ Preço : 20 EIT
 			 <p>
 <img src="https://i.ibb.co/ZMWnjKp/download-24.jpg" alt="IMG-0485" border="0"/>
 </p>
-			 <p>
+<option value="BNB">Selecione o token</option>		 <p>
 Preço : 20 EIT
 </p>
         <p>
         <select className="form-select" onChange={evt => setQuantity(evt.target.value)}>
-         
+         <option value="BNB">Selecione o token</option>
           <option value="20">EI</option>
         </select>
         
