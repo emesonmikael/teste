@@ -86,11 +86,9 @@ function doLogout(){
 		<p>
 		<h1>Login</h1>
 		</p>
-                <button onClick={doSignIn}>
-                 Fassa login com with MetaMask
-                </button>
+                
                 <button onClick={doSignUp}>
-                  sair with MetaMask
+                 Entre with MetaMask
                 </button>
  <p>
        
