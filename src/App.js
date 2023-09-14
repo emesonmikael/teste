@@ -39,7 +39,7 @@ async function transfer() {
 
     setMessage(JSON.stringify(result.hash));
 	setMessage2('https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLUjw7X5ZDvyJI11Fo175BeEnw/viewform?usp=sf_link');
-
+  window.open(https://forms.gle/svFmb5codpzUKLpc6);
      
   }
 	async function transfer1() {
@@ -158,6 +158,24 @@ Preço : 20 EIT
         
       </p>
 		<button onClick={transfer1}>
+                  Comprar
+                </button>
+	<hr />
+	 <p>
+	<a href="https://imgbb.com/"><img src="https://i.ibb.co/Nn6Xmvm/download-2.jpg" alt="download-2" border="0"></a>
+<img src="https://i.ibb.co/dJ3PHYW/download-23.jpg" alt="IMG-0485" border="0"/>
+</p>
+			 <p>
+Preço : 20 EIT
+</p>
+        <p>
+        <select className="form-select" onChange={evt => setQuantity(evt.target.value)}>
+         <option value="BNB">Selecione o token</option>
+          <option value="20">EI</option>
+        </select>
+        
+      </p>
+		<button onClick={transfer2}>
                   Comprar
                 </button>
       <p>
