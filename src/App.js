@@ -92,7 +92,7 @@ setBalance(balance);
 
 }
 function doLogout(){
-checkBalance();
+
   localStorage.removeItem('wallet');
   setWallet('');
   setError('');
