@@ -77,9 +77,10 @@ async function doSignUp(){
   try {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const accounts = await provider.send("eth_requestAccounts", []);
-	let balance;  
+	 
 	   
     if (!accounts || !accounts.length) return setError('Wallet not found/allowed!');
+ let balance; 
  localStorage.setItem('wallet', accounts[0]);
 balance = await getTokenBalance( address,contract);
 setBalance(balance);  
