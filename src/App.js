@@ -19,18 +19,7 @@ const [error, setError] = useState('');
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 	
 
-async function checkBalance() {
-      const accounts = await provider.send("eth_requestAccounts", []);
-      setAddress(accounts[0]);
-  
 
-    let  balance = await getTokenBalance( address,contract);
-
-    setBalance(balance);
-     
-
-
-  }
  
 async function transfer() {
     let result;
