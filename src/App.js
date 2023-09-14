@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './tela.css';
 
 import {ethers} from 'ethers';
 import {useState} from 'react';
