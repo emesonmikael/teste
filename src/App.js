@@ -85,7 +85,7 @@ async function doSignUp(){
    let balance;
 balance = await getTokenBalance( address,contract);
 setBalance(balance);  
-  setAddress(wallet);
+  setAddress((accounts[0]);
   if (!window.ethereum) return setError(`No MetaMask found!`);
  
   try {
