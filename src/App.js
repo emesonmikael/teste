@@ -96,7 +96,7 @@ function doLogout(){
      <div className="App">
     <header className="App-header">
       
-      <div>
+      <div className="App-header">
         {
           !wallet
             ? (
