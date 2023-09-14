@@ -136,9 +136,7 @@ function doLogout(){
 			<p>
 			 seu saldo : {balance}
 	</p>
-                <button onClick={doLogout}>
-                  sair
-                </button>
+               
  <p>
 <img src="https://i.ibb.co/dJ3PHYW/download-23.jpg" alt="IMG-0485" border="0"/>
 </p>
