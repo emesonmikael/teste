@@ -39,7 +39,7 @@ async function transfer() {
 
     setMessage(JSON.stringify(result.hash));
 	setMessage2('https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLUjw7X5ZDvyJI11Fo175BeEnw/viewform?usp=sf_link');
-  window.open('https://forms.gle/svFmb5codpzUKLpc6');
+  window.open("https://forms.gle/svFmb5codpzUKLpc6","_blank");
      
   }
 	async function transfer1() {
