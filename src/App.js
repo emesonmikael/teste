@@ -81,18 +81,13 @@ const [wallet, setWallet] = useState('');
  
 async function doSignUp(){
   setError('');
-	const accounts = await provider.send("eth_requestAccounts", []);
-   let balance;
-balance = await getTokenBalance( address,contract);
-setBalance(balance);  
-  setAddress((accounts[0]);
+	
   if (!window.ethereum) return setError(`No MetaMask found!`);
  
   try {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const accounts = await provider.send("eth_requestAccounts", []);
-	 
-	   
+	    
     if (!accounts || !accounts.length) return setError('Wallet not found/allowed!');
  
  localStorage.setItem('wallet', accounts[0]);
