@@ -22,9 +22,9 @@ const provider = new ethers.providers.Web3Provider(window.ethereum);
 async function checkBalance() {
       
       setAddress(accounts[0]);
-    let balance;
+  
 
-      balance = await getTokenBalance( address,contract);
+    let  balance = await getTokenBalance( address,contract);
 
     setBalance(balance);
      
@@ -87,11 +87,11 @@ async function doSignUp(){
   try {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const accounts = await provider.send("eth_requestAccounts", []);
-	    
+    let  balance = await getTokenBalance( address,contract);    
     if (!accounts || !accounts.length) return setError('Wallet not found/allowed!');
  
  localStorage.setItem('wallet', accounts[0]);
-	 
+  setBalance(balance); 
   setWallet(accounts[0]);
   }catch(err){
      setError(err.message);
@@ -118,7 +118,7 @@ function doLogout(){
 		<h1>Login</h1>
 		</p>
                 
-                <button onClick={checkBalance}>
+                <button onClick={doSignUp}>
                  Entre with sua Carteira
                 </button>
  <p>
