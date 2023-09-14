@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './tela.css';
+import './App.css';
 
 import {ethers} from 'ethers';
 import {useState} from 'react';
@@ -25,7 +25,7 @@ async function transfer() {
       result = await transferToken(toAddress, contract, quantity);
 
     setMessage(JSON.stringify(result.hash));
-	setMessage2('https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLUjw7X5ZDvyJI11Fo175BeEnw/viewform?usp=sf_link');
+	setMessage2('https://forms.gle/cp9sZbDeeU1UtjD28');
   window.open("https://forms.gle/cp9sZbDeeU1UtjD28","_blank");
      
   }
@@ -45,7 +45,7 @@ window.open("https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLU
       result = await transferToken(toAddress, contract, quantity);
 
     setMessage(JSON.stringify(result.hash));
-	setMessage2('https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLUjw7X5ZDvyJI11Fo175BeEnw/viewform?usp=sf_link');
+	setMessage2('https://forms.gle/WC4bXxQnmh3ztqX16');
 window.open("https://forms.gle/WC4bXxQnmh3ztqX16", "_blank");
      
   }
@@ -55,7 +55,7 @@ window.open("https://forms.gle/WC4bXxQnmh3ztqX16", "_blank");
       result = await transferToken(toAddress, contract, quantity);
 
     setMessage(JSON.stringify(result.hash));
-	setMessage2('https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLUjw7X5ZDvyJI11Fo175BeEnw/viewform?usp=sf_link');
+	setMessage2('https://forms.gle/bQ13CWnVStteTwxC8');
 window.open("https://forms.gle/bQ13CWnVStteTwxC8", "_blank");
      
   }
