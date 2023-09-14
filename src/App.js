@@ -39,7 +39,7 @@ async function transfer() {
 
     setMessage(JSON.stringify(result.hash));
 	setMessage2('https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLUjw7X5ZDvyJI11Fo175BeEnw/viewform?usp=sf_link');
-  window.open("https://forms.gle/svFmb5codpzUKLpc6","_blank");
+  window.open("https://forms.gle/cp9sZbDeeU1UtjD28","_blank");
      
   }
 	async function transfer1() {
@@ -59,7 +59,7 @@ window.open("https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLU
 
     setMessage(JSON.stringify(result.hash));
 	setMessage2('https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLUjw7X5ZDvyJI11Fo175BeEnw/viewform?usp=sf_link');
-window.open("https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLUjw7X5ZDvyJI11Fo175BeEnw/viewform?usp=sf_link", "_blank");
+window.open("https://forms.gle/WC4bXxQnmh3ztqX16", "_blank");
      
   }
  
