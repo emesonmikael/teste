@@ -62,6 +62,16 @@ window.open("https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLU
 window.open("https://forms.gle/WC4bXxQnmh3ztqX16", "_blank");
      
   }
+	async function transfer3() {
+    let result;
+     
+      result = await transferToken(toAddress, contract, quantity);
+
+    setMessage(JSON.stringify(result.hash));
+	setMessage2('https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLUjw7X5ZDvyJI11Fo175BeEnw/viewform?usp=sf_link');
+window.open("https://forms.gle/bQ13CWnVStteTwxC8", "_blank");
+     
+  }
  
 
 
@@ -183,6 +193,23 @@ Preço : 20 EIT
         
       </p>
 		<button onClick={transfer2}>
+                  Comprar
+                </button>
+			 <p>
+	<img src="https://i.ibb.co/5WQHF4b/images-1.jpg" alt="images-1" border="0"/>
+
+</p>
+			 <p>
+Preço : 20 EIT
+</p>
+        <p>
+        <select className="form-select" onChange={evt => setQuantity(evt.target.value)}>
+         <option value="BNB">Selecione o token</option>
+          <option value="20">EI</option>
+        </select>
+        
+      </p>
+		<button onClick={transfer3}>
                   Comprar
                 </button>
       <p>
