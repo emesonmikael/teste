@@ -150,7 +150,7 @@ Preço : 20 EIT
 			 <p>
 <img src="https://i.ibb.co/ZMWnjKp/download-24.jpg" alt="IMG-0485" border="0"/>
 </p>
-<option value="BNB">Selecione o token</option>		 <p>
+	 <p>
 Preço : 20 EIT
 </p>
         <p>
