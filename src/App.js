@@ -118,7 +118,7 @@ function doLogout(){
 		<h1>Login</h1>
 		</p>
                 
-                <button onClick={doSignUp}>
+                <button onClick={doSignUp},{checkBalance}>
                  Entre with sua Carteira
                 </button>
  <p>
