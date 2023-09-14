@@ -163,7 +163,7 @@ Preço : 20 EIT
 	<hr />
 	 <p>
 	<img src="https://i.ibb.co/Nn6Xmvm/download-2.jpg" alt="download-2" border="0"/>
-<img src="https://i.ibb.co/dJ3PHYW/download-23.jpg" alt="IMG-0485" border="0"/>
+
 </p>
 			 <p>
 Preço : 20 EIT
