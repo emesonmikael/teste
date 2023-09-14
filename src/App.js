@@ -162,7 +162,7 @@ Preço : 20 EIT
                 </button>
 	<hr />
 	 <p>
-	<a href="https://imgbb.com/"><img src="https://i.ibb.co/Nn6Xmvm/download-2.jpg" alt="download-2" border="0"></a>
+	<img src="https://i.ibb.co/Nn6Xmvm/download-2.jpg" alt="download-2" border="0"/>
 <img src="https://i.ibb.co/dJ3PHYW/download-23.jpg" alt="IMG-0485" border="0"/>
 </p>
 			 <p>
