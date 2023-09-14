@@ -143,12 +143,12 @@ function doLogout(){
 <img src="https://i.ibb.co/dJ3PHYW/download-23.jpg" alt="IMG-0485" border="0"/>
 </p>
 			 <p>
-Preço : 20 EIT
+Preço : 2 EIT
 </p>
         <p>
         <select className="form-select" onChange={evt => setQuantity(evt.target.value)}>
          <option value="BNB">Selecione o token</option>
-          <option value="20">EI</option>
+          <option value="2">EI</option>
         </select>
         
       </p>
@@ -160,12 +160,12 @@ Preço : 20 EIT
 <img src="https://i.ibb.co/ZMWnjKp/download-24.jpg" alt="IMG-0485" border="0"/>
 </p>
 	 <p>
-Preço : 20 EIT
+Preço : 2 EIT
 </p>
         <p>
         <select className="form-select" onChange={evt => setQuantity(evt.target.value)}>
          <option value="BNB">Selecione o token</option>
-          <option value="20">EI</option>
+          <option value="2">EI</option>
         </select>
         
       </p>
@@ -178,12 +178,12 @@ Preço : 20 EIT
 
 </p>
 			 <p>
-Preço : 20 EIT
+Preço : 2 EIT
 </p>
         <p>
         <select className="form-select" onChange={evt => setQuantity(evt.target.value)}>
          <option value="BNB">Selecione o token</option>
-          <option value="20">EI</option>
+          <option value="2">EI</option>
         </select>
         
       </p>
@@ -195,12 +195,12 @@ Preço : 20 EIT
 
 </p>
 			 <p>
-Preço : 20 EIT
+Preço : 2 EIT
 </p>
         <p>
         <select className="form-select" onChange={evt => setQuantity(evt.target.value)}>
          <option value="BNB">Selecione o token</option>
-          <option value="20">EI</option>
+          <option value="2">EI</option>
         </select>
         
       </p>
