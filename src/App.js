@@ -119,7 +119,7 @@ function doLogout(){
 		</p>
                 
                 <button onClick={doSignUp}>
-                 Entre with MetaMask
+                 Entre with sua Carteira
                 </button>
  <p>
        
