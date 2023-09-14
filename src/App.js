@@ -118,7 +118,7 @@ function doLogout(){
             : (
               <>
                 <p>
-                  Wallet: {wallet}
+                 
                 </p>
 			<p>
 			 seu saldo : {balance}
