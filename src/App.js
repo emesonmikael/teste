@@ -20,7 +20,7 @@ const provider = new ethers.providers.Web3Provider(window.ethereum);
 	
 
 async function checkBalance() {
-      
+      const accounts = await provider.send("eth_requestAccounts", []);
       setAddress(accounts[0]);
   
 
