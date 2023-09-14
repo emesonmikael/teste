@@ -172,7 +172,7 @@ Preço : 2 EIT
 		<button onClick={transfer1}>
                   Comprar
                 </button>
-	<hr />
+	
 	 <p>
 	<img src="https://i.ibb.co/Nn6Xmvm/download-2.jpg" alt="download-2" border="0"/>
 
