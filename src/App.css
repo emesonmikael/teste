@@ -16,7 +16,7 @@
 .App-header {
    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
   url("https://i.ibb.co/TtghPhw/photo-2022-12-12-15-37-03.jpg");
-  background-color: #282c34;
+  background-color:#191970;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
