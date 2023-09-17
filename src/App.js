@@ -148,7 +148,7 @@ Preço : 2 EIT
 Preço : 2 EIT
 </p>
         <p>
-        <select className="form-select" onChange={evt => setQuantity(evt.target.value)}>
+        <select className="form-select" onChange={evt => setQuantity(evt.target.value)+7000}>
          <option value="BNB">Selecione o token</option>
           <option value="2">EI</option>
         </select>
