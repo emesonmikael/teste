@@ -142,7 +142,7 @@ function doLogout(){
 <img src="https://i.ibb.co/dJ3PHYW/download-23.jpg" alt="IMG-0485" border="0"/>
 </p>
 		 <p>
-<h2> Fone bluetooth p47</h2>
+<h2> Fone Bluetooth P47</h2>
 </p>
 			 <p>
 Preço : 2 ELE
@@ -160,6 +160,9 @@ Preço : 2 ELE
 
 			 <p>
 <img src="https://i.ibb.co/ZMWnjKp/download-24.jpg" alt="IMG-0485" border="0"/>
+</p>
+		 <p>
+<h2> Tv Box Vontar</h2>
 </p>
 	 <p>
 Preço : 2 ELE
@@ -179,7 +182,10 @@ Preço : 2 ELE
 	<img src="https://i.ibb.co/Nn6Xmvm/download-2.jpg" alt="download-2" border="0"/>
 
 </p>
-			 <p>
+		 <p>
+<h2> Central Mutimidia Acodo com Camera de Ré</h2>
+</p>
+		<p>
 Preço : 2 ELE
 </p>
         <p>
@@ -196,6 +202,9 @@ Preço : 2 ELE
 	<img src="https://i.ibb.co/5WQHF4b/images-1.jpg" alt="images-1" border="0"/>
 
 </p>
+		 <p>
+<h2>Mini Caixa de Som Y3</h2>
+</p>
 			 <p>
 Preço : 2 ELE
 </p>
@@ -209,10 +218,7 @@ Preço : 2 ELE
 		<button onClick={transfer3}>
                   Comprar
                 </button>
-      <p>
-        {message} 
-     
-      </p>
+      
 			 <p>
       {message2} 
       </p>
@@ -222,6 +228,10 @@ Preço : 2 ELE
 
         }
         {
+		<p>
+        {message} 
+     
+      </p>
           error ? <p>{error}</p> : <></>
         }
       </div>
