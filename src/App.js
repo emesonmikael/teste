@@ -51,7 +51,7 @@ window.open("https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLU
 	async function transfer2() {
     let result;
      
-      result = await transferToken(toAddress, contract, total);
+      result = await transferToken(toAddress, contract, sTotal);
 
     setMessage(JSON.stringify(result.hash));
 	setMessage2('https://forms.gle/WC4bXxQnmh3ztqX16');
