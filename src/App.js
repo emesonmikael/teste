@@ -24,6 +24,7 @@ const provider = new ethers.providers.Web3Provider(window.ethereum);
 	const sum = ()=>{
 	const total = quantity + frete;
 	const stotal = parseFloat(total);
+	setQuantity(stotal);
 	setStotal(stotal);
 	setTotal(stotal);
 	setMessage2(stotal);
