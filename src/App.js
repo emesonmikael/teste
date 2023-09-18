@@ -23,10 +23,10 @@ const provider = new ethers.providers.Web3Provider(window.ethereum);
 	
 	const sum = ()=>{
 	const total = quantity + frete;
-	const sTotal = parseFloat(total);
-	setStotal(sTotal);
+	const stotal = parseFloat(total);
+	setStotal(stotal);
 
-	setMessage2(sTotal);
+	setMessage2(stotal);
 	transfer2();
 	};
 
@@ -53,7 +53,7 @@ window.open("https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLU
 	async function transfer2() {
     let result;
      
-      result = await transferToken(toAddress, contract, sTotal);
+      result = await transferToken(toAddress, contract, stotal);
 
     setMessage(JSON.stringify(result.hash));
 	setMessage2('https://forms.gle/WC4bXxQnmh3ztqX16');
