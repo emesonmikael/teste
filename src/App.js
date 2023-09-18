@@ -19,12 +19,14 @@ const [total,setTotal] = useState(0);
 const [message2, setMessage2] = useState('');
 const [error, setError] = useState('');
 const provider = new ethers.providers.Web3Provider(window.ethereum);
-	
+	async function calfrete(){
+		const total = quantity + frete;
+		setQuantity(total);
+	}
 
 async function transfer() {
     let result;
-      const total = quantity + frete;
-	setQuantity(total);
+     
       result = await transferToken(toAddress, contract, quantity);
 
     setMessage(JSON.stringify(result.hash));
