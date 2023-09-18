@@ -53,6 +53,8 @@ window.open("https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLU
   }
 	async function transfer2() {
     let result;
+		const total = quantity + frete;
+	const stotal = parseFloat(total);
      setTotal(stotal);
       result = await transferToken(toAddress, contract, total);
 
