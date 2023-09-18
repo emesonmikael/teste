@@ -139,7 +139,7 @@ function doLogout(){
 Preço : 2 EIT
 </p>
         <p>
-        <select className="form-select" onChange={evt => setQuantity(evt.target.value)}>
+        <select className="form-select" onChange={evt => setQuantity(+evt.target.value)}>
          <option value="BNB">Selecione o token</option>
           <option value="2">EI</option>
         </select>
