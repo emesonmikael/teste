@@ -4,7 +4,7 @@ import React from "react";
 import {ethers} from 'ethers';
 import {useState} from 'react';
 import { getTokenBalance, getBnbBalance, transferBnb, transferToken, getTransaction } from './MetaMaskService';
-
+import { Utils } from "@nativescript/core";
 function App() {
 	
 const [address, setAddress] = useState("");
@@ -21,6 +21,7 @@ const [error, setError] = useState('');
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 	const sum = ()=>{
 	const total = quantity + frete;
+	const numberValue = utilsModule.convertString(total);
 	setTotal(total);
 	setQuantity(total);
 	setMessage2(total);
