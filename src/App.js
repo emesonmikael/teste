@@ -19,12 +19,12 @@ const [total,setTotal] = React.useState();
 const [message2, setMessage2] = useState('');
 const [error, setError] = useState('');
 const provider = new ethers.providers.Web3Provider(window.ethereum);
-	async function calfrete(){
+	const calfrete = ()=>{
 		const total = quantity + frete;
 		setQuantity(total);
 		setMessage2(total);
 		transfer();
-	}
+	};
 
 async function transfer() {
     let result;
