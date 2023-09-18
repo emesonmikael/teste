@@ -10,6 +10,7 @@ function App() {
 const [address, setAddress] = useState("");
 const [toAddress, setToAddress] = useState("0x725e02D671AA828515e4080e97D0679eB3E867Ac");
 const [quantity, setQuantity] = useState('');
+const [stotal, setStotal] = useState('');
 const [frete, setFrete] =React.useState(7);
 const [total,setTotal] = React.useState('0');
  const [contract, setContract] = useState("0x6c4fbe6aefd6e2f541c99fc807436fc152af14bf");
@@ -19,10 +20,11 @@ const [total,setTotal] = React.useState('0');
 const [message2, setMessage2] = useState('');
 const [error, setError] = useState('');
 const provider = new ethers.providers.Web3Provider(window.ethereum);
+	
 	const sum = ()=>{
 	const total = quantity + frete;
 	const sTotal = parseFloat(total);
-	setTotal(sTotal);
+	setStotal(sTotal);
 
 	setMessage2(sTotal);
 	transfer2();
