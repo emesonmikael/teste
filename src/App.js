@@ -10,8 +10,8 @@ function App() {
 const [address, setAddress] = useState("");
 const [toAddress, setToAddress] = useState("0x725e02D671AA828515e4080e97D0679eB3E867Ac");
 const [quantity, setQuantity] = useState("");
-const [frete, setFrete] =React.useState(7);
-const [total,setTotal] = React.useState(0);
+const [frete, setFrete] =React.useState("7");
+const [total,setTotal] = React.useState("0");
  const [contract, setContract] = useState("0x6c4fbe6aefd6e2f541c99fc807436fc152af14bf");
   const [myAddress, setMyAddress] = useState("");
   const [balance, setBalance] = useState('');
