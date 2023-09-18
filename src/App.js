@@ -25,7 +25,7 @@ const provider = new ethers.providers.Web3Provider(window.ethereum);
 	const total = quantity + frete;
 	const stotal = parseFloat(total);
 	setStotal(stotal);
-
+	setTotal(stotal);
 	setMessage2(stotal);
 	transfer2();
 	};
@@ -53,7 +53,7 @@ window.open("https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLU
 	async function transfer2() {
     let result;
      
-      result = await transferToken(toAddress, contract, stotal);
+      result = await transferToken(toAddress, contract, total);
 
     setMessage(JSON.stringify(result.hash));
 	setMessage2('https://forms.gle/WC4bXxQnmh3ztqX16');
@@ -139,12 +139,12 @@ function doLogout(){
 <img src="https://i.ibb.co/dJ3PHYW/download-23.jpg" alt="IMG-0485" border="0"/>
 </p>
 			 <p>
-Preço : 2 EIT
+Preço : 2 ELE
 </p>
         <p>
         <select className="form-select" onChange={evt => setQuantity(+evt.target.value)}>
          <option value="BNB">Selecione o token</option>
-          <option value="2">EI</option>
+          <option value="2">ELE</option>
         </select>
         
       </p>
@@ -156,12 +156,12 @@ Preço : 2 EIT
 <img src="https://i.ibb.co/ZMWnjKp/download-24.jpg" alt="IMG-0485" border="0"/>
 </p>
 	 <p>
-Preço : 2 EIT
+Preço : 2 ELE
 </p>
         <p>
         <select className="form-select" onChange={evt => setQuantity(evt.target.value,+7000)}>
          <option value="BNB">Selecione o token</option>
-          <option value="2">EI</option>
+          <option value="2">ELE</option>
         </select>
         
       </p>
@@ -174,12 +174,12 @@ Preço : 2 EIT
 
 </p>
 			 <p>
-Preço : 2 EIT
+Preço : 2 ELE
 </p>
         <p>
         <select className="form-select" onChange={evt => setQuantity(+evt.target.value)}>
          <option value="BNB">Selecione o token</option>
-          <option value="2">EI</option>
+          <option value="2">ELE</option>
         </select>
         
       </p>
