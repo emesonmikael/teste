@@ -216,7 +216,10 @@ Preço : 5.500 ELE + 7.000 Frete Total 12.500 ELE
 		<button onClick={transfer3}>
                   Comprar
                 </button>
-      
+      <p>
+        {message} 
+     
+      </p>
 			 <p>
       {message2} 
       </p>
@@ -226,10 +229,7 @@ Preço : 5.500 ELE + 7.000 Frete Total 12.500 ELE
 
         }
         {
-		<p>
-        {message} 
-     
-      </p>
+		
           error ? <p>{error}</p> : <></>
         }
       </div>
