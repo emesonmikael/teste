@@ -8,12 +8,12 @@ import { getTokenBalance, getBnbBalance, transferBnb, transferToken, getTransact
 function App() {
 	
 const [address, setAddress] = useState("");
-const [toAddress, setToAddress] = useState("0x725e02D671AA828515e4080e97D0679eB3E867Ac");
+const [toAddress, setToAddress] = useState("0x8bCea3942295f3b847B49C190862781C4fC2EFe3");
 const [quantity, setQuantity] = useState('');
 const [stotal, setStotal] = useState('');
 const [frete, setFrete] =React.useState(7);
 const [total,setTotal] = React.useState('0');
- const [contract, setContract] = useState("0x6c4fbe6aefd6e2f541c99fc807436fc152af14bf");
+ const [contract, setContract] = useState("0x6A7a3318499B026432Cd74f049226Af6c35aC2e0");
   const [myAddress, setMyAddress] = useState("");
   const [balance, setBalance] = useState('');
   const [message, setMessage] = useState('');
@@ -24,7 +24,7 @@ const provider = new ethers.providers.Web3Provider(window.ethereum);
 	const sum = ()=>{
 	const total = quantity + frete;
 	const stotal = parseFloat(total);
-	setQuantity(stotal);
+	setQuantity(total);
 	setStotal(stotal);
 	setTotal(stotal);
 	setMessage2(stotal);
@@ -53,10 +53,8 @@ window.open("https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLU
   }
 	async function transfer2() {
     let result;
-		const total = quantity + frete;
-	const stotal = parseFloat(total);
-     setTotal(stotal);
-      result = await transferToken(toAddress, contract, total);
+	
+      result = await transferToken(toAddress, contract, quantity);
 
     setMessage(JSON.stringify(result.hash));
 	setMessage2('https://forms.gle/WC4bXxQnmh3ztqX16');
@@ -145,12 +143,12 @@ function doLogout(){
 <h2> Fone Bluetooth P47</h2>
 </p>
 			 <p>
-Preço : 2 ELE
+Preço : 8.000 ELE + 7.000 Frete Total 15.000
 </p>
         <p>
-        <select className="form-select" onChange={evt => setQuantity(+evt.target.value)}>
+        <select className="form-select" onChange={evt => setQuantity(evt.target.value)}>
          <option value="BNB">Selecione o token</option>
-          <option value="2">ELE</option>
+          <option value="15000">ELE</option>
         </select>
         
       </p>
@@ -165,12 +163,12 @@ Preço : 2 ELE
 <h2> Tv Box Vontar</h2>
 </p>
 	 <p>
-Preço : 2 ELE
+Preço : 50.000 ELE + 7.000 Frete Total 57.000 ELE
 </p>
         <p>
-        <select className="form-select" onChange={evt => setQuantity(evt.target.value,+7000)}>
+        <select className="form-select" onChange={evt => setQuantity(evt.target.value)}>
          <option value="BNB">Selecione o token</option>
-          <option value="2">ELE</option>
+          <option value="57000">ELE</option>
         </select>
         
       </p>
@@ -186,16 +184,16 @@ Preço : 2 ELE
 <h2> Central Mutimidia Acodo com Camera de Ré</h2>
 </p>
 		<p>
-Preço : 2 ELE
+Preço : 34.000 ELE + 7.000 Frete Total 41.000 ELE
 </p>
         <p>
         <select className="form-select" onChange={evt => setQuantity(+evt.target.value)}>
          <option value="BNB">Selecione o token</option>
-          <option value="2">ELE</option>
+          <option value="41000">ELE</option>
         </select>
         
       </p>
-		<button onClick={sum}>
+		<button onClick={transfer2}>
                   Comprar
                 </button>
 			 <p>
@@ -206,12 +204,12 @@ Preço : 2 ELE
 <h2>Mini Caixa de Som Y3</h2>
 </p>
 			 <p>
-Preço : 2 ELE
+Preço : 5.500 ELE + 7.000 Frete Total 12.500 ELE
 </p>
         <p>
         <select className="form-select" onChange={evt => setQuantity(evt.target.value)}>
          <option value="BNB">Selecione o token</option>
-          <option value="2">ELE</option>
+          <option value="12500">ELE</option>
         </select>
         
       </p>
