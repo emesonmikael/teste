@@ -21,10 +21,10 @@ const [error, setError] = useState('');
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 	const sum = ()=>{
 	const total = quantity + frete;
-	const numberValue = utilsModule.convertString(total);
-	setTotal(total);
-	setQuantity(total);
-	setMessage2(total);
+	const sTotal = parseFloat(total);
+	setTotal(sTotal);
+
+	setMessage2(sTotal);
 	transfer2();
 	};
 
