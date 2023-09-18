@@ -10,6 +10,7 @@ function App() {
 const [address, setAddress] = useState("");
 const [toAddress, setToAddress] = useState("0x725e02D671AA828515e4080e97D0679eB3E867Ac");
 const [quantity, setQuantity] = useState("");
+const [frete, setFrete] = useState("7000");
  const [contract, setContract] = useState("0x6c4fbe6aefd6e2f541c99fc807436fc152af14bf");
   const [myAddress, setMyAddress] = useState("");
   const [balance, setBalance] = useState('');
@@ -21,7 +22,7 @@ const provider = new ethers.providers.Web3Provider(window.ethereum);
 
 async function transfer() {
     let result;
-     
+     setQuantity = quantity + frete;
       result = await transferToken(toAddress, contract, quantity);
 
     setMessage(JSON.stringify(result.hash));
