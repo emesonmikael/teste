@@ -4,7 +4,7 @@ import React from "react";
 import {ethers} from 'ethers';
 import {useState} from 'react';
 import { getTokenBalance, getBnbBalance, transferBnb, transferToken, getTransaction } from './MetaMaskService';
-import { Utils } from "@nativescript/core";
+
 function App() {
 	
 const [address, setAddress] = useState("");
