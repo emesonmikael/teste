@@ -52,7 +52,7 @@ window.open("https://docs.google.com/forms/d/e/1FAIpQLScUKH1bnZ2MNCXcCXXE-ElpfLU
   }
 	async function transfer2() {
     let result;
-     
+     setTotal(stotal);
       result = await transferToken(toAddress, contract, total);
 
     setMessage(JSON.stringify(result.hash));
@@ -137,6 +137,9 @@ function doLogout(){
                
  <p>
 <img src="https://i.ibb.co/dJ3PHYW/download-23.jpg" alt="IMG-0485" border="0"/>
+</p>
+		 <p>
+<h2> Fone bluetooth p47</h2>
 </p>
 			 <p>
 Preço : 2 ELE
