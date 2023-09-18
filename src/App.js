@@ -24,7 +24,7 @@ const provider = new ethers.providers.Web3Provider(window.ethereum);
 	setTotal(total);
 	setQuantity(total);
 	setMessage2(total);
-	transfer();
+	transfer2();
 	};
 
 async function transfer() {
@@ -145,7 +145,7 @@ Preço : 2 EIT
         </select>
         
       </p>
-		<button onClick={sum}>
+		<button onClick={transfer}>
                   Comprar
                 </button>
 
@@ -180,7 +180,7 @@ Preço : 2 EIT
         </select>
         
       </p>
-		<button onClick={transfer2}>
+		<button onClick={sum}>
                   Comprar
                 </button>
 			 <p>
