@@ -22,7 +22,7 @@ const provider = new ethers.providers.Web3Provider(window.ethereum);
 	async function calfrete(){
 		const total = quantity + frete;
 		setQuantity(total);
-		setMessage2(quantity);
+		setMessage2(total);
 		transfer();
 	}
 
