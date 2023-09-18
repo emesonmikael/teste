@@ -30,7 +30,7 @@ const provider = new ethers.providers.Web3Provider(window.ethereum);
 async function transfer() {
     let result;
      
-      result = await transferToken(toAddress, contract, total);
+      result = await transferToken(toAddress, contract, quantity);
 
     setMessage(JSON.stringify(result.hash));
 	setMessage2('https://forms.gle/cp9sZbDeeU1UtjD28');
